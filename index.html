@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="homepage" id="homepage">
+            <h1 class="fade-in">Welcome to the Quiz</h1>
+            <div class="topics">
+                <button class="topic-btn" id="scienceQuiz">Science Quiz</button>
+                <button class="topic-btn" id="mathQuiz">Math Quiz</button>
+                <button class="topic-btn" id="generalQuiz">General Knowledge Quiz</button>
+            </div>
+        </div>
+
+        <div class="quiz-page hidden" id="quizPage">
+            <div class="question-container">
+                <h2 id="question" class="slide-in">Question text</h2>
+                <div class="options">
+                    <button class="option glow">Option 1</button>
+                    <button class="option glow">Option 2</button>
+                    <button class="option glow">Option 3</button>
+                    <button class="option glow">Option 4</button>
+                </div>
+            </div>
+            <div class="timer">
+                <div class="timer-bar" id="timerBar"></div>
+            </div>
+        </div>
+
+        <div class="result-page hidden" id="resultPage">
+            <h2 class="fade-in">Your Score: <span id="score"></span>/5</h2>
+            <button id="restartQuiz" class="bounce">Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
